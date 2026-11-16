@@ -1,0 +1,8 @@
+{
+  "op": "filter",
+  "condition": "emp.salry > 5",
+  "child": {
+    "op": "seqscan",
+    "table": "emp"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "op": "hash_join",
+  "condition": "emp.did = dept.did",
+  "left": {
+    "op": "seqscan",
+    "table": "emp"
+  },
+  "right": {
+    "op": "merge_join",
+    "left": {
+      "op": "seqscan",
+      "table": "dept"
+    },
+    "right": {
+      "op": "seqscan",
+      "table": "dept"
+    }
+  }
+}

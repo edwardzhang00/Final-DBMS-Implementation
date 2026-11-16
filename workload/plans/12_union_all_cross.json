@@ -1,0 +1,46 @@
+{
+  "op": "union_all",
+  "left": {
+    "op": "project",
+    "columns": [
+      "dept.city"
+    ],
+    "child": {
+      "op": "seqscan",
+      "table": "dept"
+    }
+  },
+  "right": {
+    "op": "project",
+    "columns": [
+      "x.region"
+    ],
+    "child": {
+      "op": "nested_loop_join",
+      "left": {
+        "op": "rename",
+        "to": "x",
+        "child": {
+          "op": "filter",
+          "condition": "dept.did < 2",
+          "child": {
+            "op": "seqscan",
+            "table": "dept"
+          }
+        }
+      },
+      "right": {
+        "op": "rename",
+        "to": "y",
+        "child": {
+          "op": "filter",
+          "condition": "dept.did < 3",
+          "child": {
+            "op": "seqscan",
+            "table": "dept"
+          }
+        }
+      }
+    }
+  }
+}

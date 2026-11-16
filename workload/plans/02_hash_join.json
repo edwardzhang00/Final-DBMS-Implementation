@@ -1,0 +1,16 @@
+{
+  "op": "hash_join",
+  "condition": "emp.did = dept.did",
+  "left": {
+    "op": "filter",
+    "condition": "emp.level = 5",
+    "child": {
+      "op": "seqscan",
+      "table": "emp"
+    }
+  },
+  "right": {
+    "op": "seqscan",
+    "table": "dept"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "op": "project",
+  "columns": [
+    "emp.name",
+    "emp.salary"
+  ],
+  "child": {
+    "op": "filter",
+    "condition": "emp.age > 60 and emp.city = 'Ottawa'",
+    "child": {
+      "op": "seqscan",
+      "table": "emp"
+    }
+  }
+}

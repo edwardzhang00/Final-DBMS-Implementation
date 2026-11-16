@@ -1,0 +1,17 @@
+{
+  "op": "sort",
+  "keys": [
+    [
+      "works.hours",
+      "desc"
+    ],
+    [
+      "works.eid",
+      "asc"
+    ]
+  ],
+  "child": {
+    "op": "seqscan",
+    "table": "works"
+  }
+}

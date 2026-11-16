@@ -1,0 +1,36 @@
+{
+  "op": "hash_join",
+  "condition": "w.pid = p.pid",
+  "left": {
+    "op": "nested_loop_join",
+    "condition": "e.eid = w.eid",
+    "left": {
+      "op": "rename",
+      "to": "e",
+      "child": {
+        "op": "filter",
+        "condition": "emp.age < 21",
+        "child": {
+          "op": "seqscan",
+          "table": "emp"
+        }
+      }
+    },
+    "right": {
+      "op": "rename",
+      "to": "w",
+      "child": {
+        "op": "seqscan",
+        "table": "works"
+      }
+    }
+  },
+  "right": {
+    "op": "rename",
+    "to": "p",
+    "child": {
+      "op": "seqscan",
+      "table": "project"
+    }
+  }
+}

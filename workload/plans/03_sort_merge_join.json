@@ -1,0 +1,20 @@
+{
+  "op": "sort_merge_join",
+  "condition": "w.eid = e.eid",
+  "left": {
+    "op": "rename",
+    "to": "w",
+    "child": {
+      "op": "seqscan",
+      "table": "works"
+    }
+  },
+  "right": {
+    "op": "rename",
+    "to": "e",
+    "child": {
+      "op": "seqscan",
+      "table": "emp"
+    }
+  }
+}

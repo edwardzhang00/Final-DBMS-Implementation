@@ -1,0 +1,20 @@
+{
+  "op": "nested_loop_join",
+  "condition": "e.salary > m.salary and e.mgr = m.eid",
+  "left": {
+    "op": "rename",
+    "to": "e",
+    "child": {
+      "op": "seqscan",
+      "table": "emp"
+    }
+  },
+  "right": {
+    "op": "rename",
+    "to": "m",
+    "child": {
+      "op": "seqscan",
+      "table": "emp"
+    }
+  }
+}

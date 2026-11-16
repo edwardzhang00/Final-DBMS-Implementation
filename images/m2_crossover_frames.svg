@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-label="Join page I/O, R = 60 pages, S = 180 pages">
+<style>text{font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif}.bg{fill:#fcfcfb}.t{fill:#0b0b0b}.m{fill:#52514e}.g{stroke:#e4e3df}.s0{stroke:#2a78d6}.f0{fill:#2a78d6}.r0{stroke:#fcfcfb}.s1{stroke:#eb6834}.f1{fill:#eb6834}.r1{stroke:#fcfcfb}.s2{stroke:#1baf7a}.f2{fill:#1baf7a}.r2{stroke:#fcfcfb}@media (prefers-color-scheme: dark){.bg{fill:#1a1a19}.t{fill:#f0efec}.m{fill:#c3c2b7}.g{stroke:#3a3936}.s0{stroke:#3987e5}.f0{fill:#3987e5}.r0{stroke:#1a1a19}.s1{stroke:#d95926}.f1{fill:#d95926}.r1{stroke:#1a1a19}.s2{stroke:#199e70}.f2{fill:#199e70}.r2{stroke:#1a1a19}}</style>
+<rect class="bg" width="720" height="420"/>
+<text class="t" x="78" y="24" font-size="15" font-weight="600">Join page I/O, R = 60 pages, S = 180 pages</text>
+<line class="g" x1="78" x2="600" y1="292.4" y2="292.4" stroke-width="1"/>
+<text class="m" x="70" y="296.4" font-size="11" text-anchor="end">500</text>
+<line class="g" x1="78" x2="600" y1="224.0" y2="224.0" stroke-width="1"/>
+<text class="m" x="70" y="228.0" font-size="11" text-anchor="end">1000</text>
+<line class="g" x1="78" x2="600" y1="155.6" y2="155.6" stroke-width="1"/>
+<text class="m" x="70" y="159.6" font-size="11" text-anchor="end">2000</text>
+<line class="g" x1="78" x2="600" y1="65.2" y2="65.2" stroke-width="1"/>
+<text class="m" x="70" y="69.2" font-size="11" text-anchor="end">5000</text>
+<text class="m" x="78.0" y="382" font-size="11" text-anchor="middle">4</text>
+<text class="m" x="154.3" y="382" font-size="11" text-anchor="middle">6</text>
+<text class="m" x="208.5" y="382" font-size="11" text-anchor="middle">8</text>
+<text class="m" x="284.8" y="382" font-size="11" text-anchor="middle">12</text>
+<text class="m" x="339.0" y="382" font-size="11" text-anchor="middle">16</text>
+<text class="m" x="399.0" y="382" font-size="11" text-anchor="middle">22</text>
+<text class="m" x="469.5" y="382" font-size="11" text-anchor="middle">32</text>
+<text class="m" x="545.8" y="382" font-size="11" text-anchor="middle">48</text>
+<text class="m" x="600.0" y="382" font-size="11" text-anchor="middle">64</text>
+<text class="m" x="339.0" y="408" font-size="12" text-anchor="middle">buffer frames B</text>
+<text class="m" x="16" y="210.0" font-size="12" text-anchor="middle" transform="rotate(-90 16 210.0)">page reads + writes (log scale)</text>
+<path d="M78.0,56.0 L154.3,123.3 L208.5,162.2 L284.8,210.5 L339.0,227.4 L399.0,273.8 L469.5,308.9 L545.8,308.9 L600.0,364.0" class="s0" fill="none" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="78.0" cy="56.0" r="4" class="f0 r0" stroke-width="2"><title>nested_loop_join: 4 → 5491</title></circle>
+<circle cx="154.3" cy="123.3" r="4" class="f0 r0" stroke-width="2"><title>nested_loop_join: 6 → 2776</title></circle>
+<circle cx="208.5" cy="162.2" r="4" class="f0 r0" stroke-width="2"><title>nested_loop_join: 8 → 1871</title></circle>
+<circle cx="284.8" cy="210.5" r="4" class="f0 r0" stroke-width="2"><title>nested_loop_join: 12 → 1147</title></circle>
+<circle cx="339.0" cy="227.4" r="4" class="f0 r0" stroke-width="2"><title>nested_loop_join: 16 → 966</title></circle>
+<circle cx="399.0" cy="273.8" r="4" class="f0 r0" stroke-width="2"><title>nested_loop_join: 22 → 604</title></circle>
+<circle cx="469.5" cy="308.9" r="4" class="f0 r0" stroke-width="2"><title>nested_loop_join: 32 → 423</title></circle>
+<circle cx="545.8" cy="308.9" r="4" class="f0 r0" stroke-width="2"><title>nested_loop_join: 48 → 423</title></circle>
+<circle cx="600.0" cy="364.0" r="4" class="f0 r0" stroke-width="2"><title>nested_loop_join: 64 → 242</title></circle>
+<text class="t" x="610.0" y="365.0" font-size="11">nested_loop_join</text>
+<path d="M78.0,116.0 L154.3,161.4 L208.5,188.5 L284.8,216.2 L339.0,227.8 L399.0,227.9 L469.5,273.1 L545.8,273.6 L600.0,273.9" class="s1" fill="none" stroke-width="2" stroke-linejoin="round"/>
+<rect x="74.0" y="112.0" width="8" height="8" rx="1" class="f1 r1" stroke-width="2"><title>sort_merge_join: 4 → 2989</title></rect>
+<rect x="150.3" y="157.4" width="8" height="8" rx="1" class="f1 r1" stroke-width="2"><title>sort_merge_join: 6 → 1886</title></rect>
+<rect x="204.5" y="184.5" width="8" height="8" rx="1" class="f1 r1" stroke-width="2"><title>sort_merge_join: 8 → 1434</title></rect>
+<rect x="280.8" y="212.2" width="8" height="8" rx="1" class="f1 r1" stroke-width="2"><title>sort_merge_join: 12 → 1082</title></rect>
+<rect x="335.0" y="223.8" width="8" height="8" rx="1" class="f1 r1" stroke-width="2"><title>sort_merge_join: 16 → 962</title></rect>
+<rect x="395.0" y="223.9" width="8" height="8" rx="1" class="f1 r1" stroke-width="2"><title>sort_merge_join: 22 → 961</title></rect>
+<rect x="465.5" y="269.1" width="8" height="8" rx="1" class="f1 r1" stroke-width="2"><title>sort_merge_join: 32 → 608</title></rect>
+<rect x="541.8" y="269.6" width="8" height="8" rx="1" class="f1 r1" stroke-width="2"><title>sort_merge_join: 48 → 605</title></rect>
+<rect x="596.0" y="269.9" width="8" height="8" rx="1" class="f1 r1" stroke-width="2"><title>sort_merge_join: 64 → 603</title></rect>
+<text class="t" x="610.0" y="277.9" font-size="11">sort_merge_join</text>
+<path d="M78.0,137.0 L154.3,205.5 L208.5,232.5 L284.8,252.9 L339.0,252.7 L399.0,251.1 L469.5,248.5 L545.8,244.8 L600.0,241.9" class="s2" fill="none" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="78.0,132.0 83.0,137.0 78.0,142.0 73.0,137.0" class="f2 r2" stroke-width="2"><title>hash_join: 4 → 2417</title></polygon>
+<polygon points="154.3,200.5 159.3,205.5 154.3,210.5 149.3,205.5" class="f2 r2" stroke-width="2"><title>hash_join: 6 → 1207</title></polygon>
+<polygon points="208.5,227.5 213.5,232.5 208.5,237.5 203.5,232.5" class="f2 r2" stroke-width="2"><title>hash_join: 8 → 918</title></polygon>
+<polygon points="284.8,247.9 289.8,252.9 284.8,257.9 279.8,252.9" class="f2 r2" stroke-width="2"><title>hash_join: 12 → 746</title></polygon>
+<polygon points="339.0,247.7 344.0,252.7 339.0,257.7 334.0,252.7" class="f2 r2" stroke-width="2"><title>hash_join: 16 → 748</title></polygon>
+<polygon points="399.0,246.1 404.0,251.1 399.0,256.1 394.0,251.1" class="f2 r2" stroke-width="2"><title>hash_join: 22 → 760</title></polygon>
+<polygon points="469.5,243.5 474.5,248.5 469.5,253.5 464.5,248.5" class="f2 r2" stroke-width="2"><title>hash_join: 32 → 780</title></polygon>
+<polygon points="545.8,239.8 550.8,244.8 545.8,249.8 540.8,244.8" class="f2 r2" stroke-width="2"><title>hash_join: 48 → 810</title></polygon>
+<polygon points="600.0,236.9 605.0,241.9 600.0,246.9 595.0,241.9" class="f2 r2" stroke-width="2"><title>hash_join: 64 → 834</title></polygon>
+<text class="t" x="610.0" y="248.9" font-size="11">hash_join</text>
+<circle cx="84.0" cy="42.0" r="4" class="f0 r0" stroke-width="2"><title>nested_loop_join</title></circle>
+<text class="t" x="94" y="46" font-size="12">nested_loop_join</text>
+<rect x="238.0" y="38.0" width="8" height="8" rx="1" class="f1 r1" stroke-width="2"><title>sort_merge_join</title></rect>
+<text class="t" x="252" y="46" font-size="12">sort_merge_join</text>
+<polygon points="393.0,37.0 398.0,42.0 393.0,47.0 388.0,42.0" class="f2 r2" stroke-width="2"><title>hash_join</title></polygon>
+<text class="t" x="403" y="46" font-size="12">hash_join</text>
+</svg>

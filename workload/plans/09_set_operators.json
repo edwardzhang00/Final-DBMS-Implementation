@@ -1,0 +1,40 @@
+{
+  "op": "except",
+  "left": {
+    "op": "project",
+    "columns": [
+      "dept.did"
+    ],
+    "child": {
+      "op": "seqscan",
+      "table": "dept"
+    }
+  },
+  "right": {
+    "op": "union",
+    "left": {
+      "op": "project",
+      "columns": [
+        "emp.did"
+      ],
+      "child": {
+        "op": "filter",
+        "condition": "emp.salary > 113000",
+        "child": {
+          "op": "seqscan",
+          "table": "emp"
+        }
+      }
+    },
+    "right": {
+      "op": "project",
+      "columns": [
+        "project.did"
+      ],
+      "child": {
+        "op": "seqscan",
+        "table": "project"
+      }
+    }
+  }
+}

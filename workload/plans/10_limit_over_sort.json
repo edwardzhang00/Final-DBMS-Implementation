@@ -1,0 +1,17 @@
+{
+  "op": "limit",
+  "n": 5,
+  "child": {
+    "op": "sort",
+    "keys": [
+      [
+        "emp.salary",
+        "desc"
+      ]
+    ],
+    "child": {
+      "op": "seqscan",
+      "table": "emp"
+    }
+  }
+}

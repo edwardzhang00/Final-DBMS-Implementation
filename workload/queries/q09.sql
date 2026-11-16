@@ -1,0 +1,1 @@
+SELECT DISTINCT city FROM emp WHERE level = 3 ORDER BY city;

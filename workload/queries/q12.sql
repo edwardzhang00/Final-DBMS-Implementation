@@ -1,0 +1,1 @@
+SELECT did FROM dept EXCEPT SELECT did FROM emp WHERE salary > 113000;

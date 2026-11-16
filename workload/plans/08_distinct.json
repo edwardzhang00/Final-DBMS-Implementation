@@ -1,0 +1,15 @@
+{
+  "op": "distinct",
+  "mode": "hash",
+  "child": {
+    "op": "project",
+    "columns": [
+      "emp.city",
+      "emp.level"
+    ],
+    "child": {
+      "op": "seqscan",
+      "table": "emp"
+    }
+  }
+}

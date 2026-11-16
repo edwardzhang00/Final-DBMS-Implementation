@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+
+# Databases and data the scripts generate (rebuilt by the commands in the reports)
+wl/
+wdb/
+db/
+dpdb/
+m1work/
+m2work/
+data/
+*.db
+tmp/
+*.tmp
+
+# Measurement output
+results*.json
+results_*.md
+
+# Editor and OS files
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

@@ -1,0 +1,23 @@
+{
+  "op": "group_by",
+  "mode": "sort",
+  "keys": [
+    "emp.level"
+  ],
+  "aggregates": [
+    [
+      "min",
+      "emp.salary",
+      "lo"
+    ],
+    [
+      "max",
+      "emp.salary",
+      "hi"
+    ]
+  ],
+  "child": {
+    "op": "seqscan",
+    "table": "emp"
+  }
+}
