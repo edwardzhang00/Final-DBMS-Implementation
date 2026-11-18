@@ -1,3 +1,6 @@
+# Video Demo
+https://www.youtube.com/watch?v=bqyST6Z7yN4
+
 # A database system, one module at a time
 
 COMP 3005 Project 2: a working DBMS in Python, built on the Bonus Project 1 relational algebra engine.
